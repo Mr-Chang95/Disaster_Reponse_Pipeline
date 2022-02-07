@@ -5,7 +5,7 @@ In this project, I will build a model to classify messages that are sent during 
 Finally, this project also contains a web app that allows you to input a message and get classification results.
 
 ## File Description
- disaster_response_pipeline
+ - disaster_response_pipeline
           - |-- app
                 - |-- templates
                         - |-- go.html
