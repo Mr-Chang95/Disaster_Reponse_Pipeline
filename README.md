@@ -51,3 +51,8 @@ After you've installed and imported all the necessary packages, you can run the 
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+## Licensing, Authors, Acknowledgements
+This app was completed as part of the [Udacity Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025).
+
+Special thanks to Figure Eight for providing the datasets and giving me the chance to do this project.
