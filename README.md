@@ -30,7 +30,6 @@ Finally, this project also contains a web app that allows you to input a message
                 |-- ETL_Preparation.db
                 |-- messages.csv
                 |-- ML Pipeline Preparation.ipynb
-                |-- README
           |-- README
 ~~~~~
 ## Installation
@@ -55,6 +54,9 @@ After you've installed and imported all the necessary packages, you can run the 
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+#### Notice: You do not to run the Preparation folder to make the program work. 
+
 ## Screenshots
 #### Screenshot 1
 <img width="1056" alt="dis  message cate" src="https://user-images.githubusercontent.com/92649864/152714519-127111eb-d2d8-4544-95c1-d713bcef682f.png">
