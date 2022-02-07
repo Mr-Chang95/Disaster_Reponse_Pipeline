@@ -49,10 +49,6 @@ def index():
     category_counts = (categories.mean()*categories.shape[0]).sort_values(ascending=False)
     category_names= list(category_counts.index)
 
-    # direct category data
-    direct_categories = df[df['genre'] == 'direct']
-    direct_category_counts = (direct_categories.mean()*direct_categories.shape[0]).sort_values(ascending=False)
-    direct_category_names= list(direct_category_counts.index)
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -91,25 +87,6 @@ def index():
                 },
                 'xaxis': {
                     'title': "Categories"
-                }
-            }
-        },
-    # Visualizing direct category plots
-        {
-            'data': [
-                Bar(
-                    x=direct_category_names,
-                    y=direct_category_counts
-                )
-            ],
-
-            'layout': {
-                'title': 'Distribution of Message Categories for "Direct" Genre',
-                'yaxis': {
-                    'title': "Count"
-                },
-                'xaxis': {
-                    'title': "Categories in Direct Genre"
                 }
             }
         }
