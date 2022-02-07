@@ -1,5 +1,7 @@
-<img width="1198" alt="banner" src="https://user-images.githubusercontent.com/92649864/152714276-607d2d64-c9c9-4aaf-bf87-edea5031d66e.png">
 # Disaster Response Pipeline Project
+
+<img width="1198" alt="banner" src="https://user-images.githubusercontent.com/92649864/152714276-607d2d64-c9c9-4aaf-bf87-edea5031d66e.png">
+
 
 ## Project Description
 In this project, I will build a model to classify messages that are sent during disasters. There are 36 pre-defined categories, and examples of these categories include Aid Related, Medical Help, Search And Rescue, etc. By classifying these messages, we can allow these messages to be sent to the appropriate disaster relief agency. The dataset -provided by Figure Eight- is used to build a model that classifies disaster messages, while the web app is where a respondent can input a new message and get classification results in several categories.
