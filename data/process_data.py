@@ -44,6 +44,9 @@ def clean_data(df):
     # drop duplicates
     df = df.drop_duplicates()
 
+    # replace the 2s with 1s in 'related' column
+    df['related'] = df['related'].replace(2, 1)
+
     return df
 
 
