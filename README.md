@@ -5,29 +5,30 @@ In this project, I will build a model to classify messages that are sent during 
 Finally, this project also contains a web app that allows you to input a message and get classification results.
 
 ## File Description
- - disaster_response_pipeline
-          - |-- app
-                - |-- templates
-                        - |-- go.html
-                        - |-- master.html
-                - |-- run.py
-          - |-- data
-                - |-- disaster_message.csv
-                - |-- disaster_categories.csv
-                - |-- DisasterResponse.db
-                - |-- process_data.py
-          - |-- models
-                - |-- classifier.pkl
-                - |-- train_classifier.py
-          - |-- Preparation
-                - |-- categories.csv
-                - |-- ETL Pipeline Preparation.ipynb
-                - |-- ETL_Preparation.db
-                - |-- messages.csv
-                - |-- ML Pipeline Preparation.ipynb
-                - |-- README
-          - |-- README
-
+~~~~~
+ disaster_response_pipeline
+          |-- app
+                |-- templates
+                        |-- go.html
+                        |-- master.html
+                |-- run.py
+          |-- data
+                |-- disaster_message.csv
+                |-- disaster_categories.csv
+                |-- DisasterResponse.db
+                |-- process_data.py
+          |-- models
+                |-- classifier.pkl
+                |-- train_classifier.py
+          |-- Preparation
+                |-- categories.csv
+                |-- ETL Pipeline Preparation.ipynb
+                |-- ETL_Preparation.db
+                |-- messages.csv
+                |-- ML Pipeline Preparation.ipynb
+                |-- README
+          |-- README
+~~~~~
 ## Installation
 Here are the different packages used for this project:
 
