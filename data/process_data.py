@@ -5,6 +5,15 @@ import sqlite3
 from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
+    """Load & merge messages & categories datasets
+    
+    inputs:
+    messages_filepath:Filepath for csv file containing messages dataset.
+    categories_filepath: Filepath for csv file containing categories dataset.
+       
+    outputs:
+    df: dataframe, containing merged content of messages & categories datasets.
+    """
     #loading datasets
     messages = pd.read_csv(messages_filepath)
     categories = pd.read_csv(categories_filepath)
@@ -36,6 +45,15 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
+    """Clean dataframe by removing duplicates & converting categories from strings 
+    to binary values. Also, renames columns and replace wrong values.
+    
+    Args:
+    df: dataframe, containing merged content of messages & categories datasets.
+       
+    Returns:
+    df: dataframe, containing cleaned version of input dataframe.
+    """
     # cleaning up the column names 
     for i in range(len(df.columns)):
         if i > 3:
@@ -51,6 +69,16 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
+    """Save into  SQLite database.
+    
+    inputs:
+    df: dataframe, containing cleaned version of merged message and 
+    categories data.
+    database_filename: Filename for output database. String.
+       
+    outputs:
+    None
+    """
     engine = create_engine('sqlite:///'+database_filename)
     # name the database 'DisasterResponse'
     df.to_sql('DisasterResponse', engine,if_exists = 'replace', index=False)  
