@@ -4,7 +4,7 @@
 
 
 ## Project Description
-In this project, I will build a model to classify messages that are sent during disasters. There are 36 pre-defined categories, and examples of these categories include Aid Related, Medical Help, Search And Rescue, etc. By classifying these messages, we can allow these messages to be sent to the appropriate disaster relief agency. The dataset -provided by Figure Eight- is used to build a model that classifies disaster messages, while the web app is where a respondent can input a new message and get classification results in several categories.
+In this project, I will create a machine learning/NLP pipeline to categorize these events and build a model to classify messages that are sent during disasters. There are 36 pre-defined categories, and examples of these categories include Aid Related, Medical Help, Search And Rescue, etc. By classifying these messages, we can allow these messages to be sent to the appropriate disaster relief agency. The dataset -provided by Figure Eight- is used to build a model that classifies disaster messages, while the web app is where a respondent can input a new message and get classification results in several categories.
 
 Finally, this project also contains a web app that allows you to input a message and get classification results.
 
